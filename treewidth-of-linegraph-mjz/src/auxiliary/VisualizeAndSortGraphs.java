@@ -25,7 +25,7 @@ public class VisualizeAndSortGraphs {
 	public void saveVisualized(String outputDirectory, boolean matrixDiagram, boolean isLinux)
 	{
 		//change addresses
-		Console.outln("The defualt address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
+		Console.outln("The default address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
 		Console.out("Do you want to change it? (Y as Yes/Other characters as No!) : ");
 		char ans = Console.nextChar();
 		if(ans == 'Y' || ans == 'y')
@@ -75,7 +75,7 @@ public class VisualizeAndSortGraphs {
 	public void saveSorted(String outputFile,boolean sortOverlay)
 	{
 		//change addresses
-		Console.outln("The defualt address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
+		Console.outln("The default address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
 		Console.out("Do you want to change it? (Y as Yes/Other characters as No!) : ");
 		char ans = Console.nextChar();
 		if(ans == 'Y' || ans == 'y')
@@ -144,7 +144,7 @@ public class VisualizeAndSortGraphs {
 	public void createLineGraphFile(String lineGraphFile)
 	{
 		//change addresses
-		Console.outln("The defualt address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
+		Console.outln("The default address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
 		Console.out("Do you want to change it? (Y as Yes/Other characters as No!) : ");
 		char ans = Console.nextChar();
 		if(ans == 'Y' || ans == 'y')

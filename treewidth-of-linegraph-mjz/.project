@@ -10,8 +10,14 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.jsuml.plugin.jsUMLBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.jsuml.plugin.jsUMLNature</nature>
 	</natures>
 </projectDescription>
