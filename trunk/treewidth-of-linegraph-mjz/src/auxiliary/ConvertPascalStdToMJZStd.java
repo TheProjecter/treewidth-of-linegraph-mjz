@@ -20,7 +20,7 @@ public class ConvertPascalStdToMJZStd {
 	}
 	public void convert(){
 		//change addresses
-		Console.outln("The defualt address for input Pascal Std. data file is : "+inputDirectory+pascalStdInputFile);
+		Console.outln("The default address for input Pascal Std. data file is : "+inputDirectory+pascalStdInputFile);
 		Console.out("Do you want to change it? (Y as Yes/Other characters as No!) : ");
 		char ans = Console.nextChar();
 		if(ans == 'Y' || ans == 'y')

@@ -53,7 +53,7 @@ public class Menu {
 		Console.outln("12-Create TW(L(G)) list with Recursive with MultiThread approach");
 		Console.outln("13-Create TW(L(G)) list with Branch And Bound approach");
 		Console.outln("14-Exit");
-		Console.out("Your choise (Just a Number): ");
+		Console.out("Your choice (Just a Number): ");
 	}
 	public void start(){
 		

@@ -21,7 +21,7 @@ public class TreeWidthPerformer
 	public void calculateTW(String algorithm)
 	{
 		//change addresses
-		Console.outln("The defualt address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
+		Console.outln("The default address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
 		Console.out("Do you want to change it? (Y as Yes/Other characters as No!) : ");
 		char ans = Console.nextChar();
 		if(ans == 'Y' || ans == 'y')
@@ -78,7 +78,7 @@ public class TreeWidthPerformer
 	{
 		FileWritter fwS = new FileWritter(OutputFilePath);
 		//change addresses
-		Console.outln("The defualt address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
+		Console.outln("The default address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
 		Console.out("Do you want to change it? (Y as Yes/Other characters as No!) : ");
 		char ans = Console.nextChar();
 		if(ans == 'Y' || ans == 'y')
