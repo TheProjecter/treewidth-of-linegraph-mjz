@@ -48,41 +48,49 @@
   </class>  
   <class id="6" language="java" name="graphTools.Graph" project="treewidth-of-linegraph-mjz" 
     file="/treewidth-of-linegraph-mjz/src/graphTools/Graph.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="215" y="242"/>    
+    <position height="-1" width="-1" x="217" y="257"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="7">    
+  <dependency id="7">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="8">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="8" name="G"/>      
-      <multiplicity id="9" minimum="0" maximum="1"/>    
+      <attribute id="9" name="G"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="10">    
+  <dependency id="11">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
-  <dependency id="11">    
+  <dependency id="12">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="6"/>  
   </dependency>  
-  <dependency id="12">    
+  <dependency id="13">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
-  <dependency id="13">    
+  <dependency id="14">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="1"/>  
   </dependency>  
-  <association id="14">    
+  <dependency id="15">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="16">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="15" name="G"/>      
-      <multiplicity id="16" minimum="0" maximum="1"/>    
+      <attribute id="17" name="G"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

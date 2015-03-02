@@ -410,7 +410,7 @@ public class Graph
 	 * returns a list of indices based on their degree ordering
 	 * @return
 	 */
-	private ArrayList<Integer> getVerticesBasedOnDegree()
+	protected ArrayList<Integer> getVerticesBasedOnDegree()
 	{
 		int[][] vertices = new int[this.getVerticesNum()][2];
 		for(int i=0;i<this.verticesNum;i++)
@@ -1160,7 +1160,7 @@ public class Graph
 	 * @return
 	 * @throws Exception
 	 */
-	protected int getTreeWidthUpperBound(Graph G) throws Exception
+	private int getTreeWidthUpperBound(Graph G) throws Exception
 	{
 		int upperBound = 0;
 		int lowerBound = G.getTreeWidthLowerBound();
