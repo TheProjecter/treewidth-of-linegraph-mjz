@@ -11,6 +11,10 @@ public class Menu {
 	private String lineGraphFile = "lGraphs.dat";
 	private String sortedLineGraphFile = "slGraphs.dat";
 	private String boundariesFile = "boundsTWLG.txt";
+	private String twdpFile = "twdp.txt";
+	private String twrsFile = "twrs.txt";
+	private String twrmFile = "twrm.txt";
+	private String twbbFile = "twbb.txt";
 	private String originalGraphMatricesDir = "";
 	private String lineGraphMatricesDir = "";
 	private final int maxMenu = 15;//must be 1 more than biggest menu number
@@ -116,22 +120,26 @@ public class Menu {
 			else if(ans==10)
 			{
 				TreeWidthPerformer twp = new TreeWidthPerformer(outputDirectory, sortedLineGraphFile);
-				twp.calculateTW("DP");
+				Console.outln("\n >>> Check the file '"+outputDirectory+twdpFile+"' for results.");
+				twp.calculateTW("DP",outputDirectory+twdpFile);
 			}
 			else if(ans==11)
 			{
 				TreeWidthPerformer twp = new TreeWidthPerformer(outputDirectory, sortedLineGraphFile);
-				twp.calculateTW("RS");
+				Console.outln("\n >>> Check the file '"+outputDirectory+twrsFile+"' for results.");
+				twp.calculateTW("RS",outputDirectory+twrsFile);
 			}
 			else if(ans==12)
 			{
 				TreeWidthPerformer twp = new TreeWidthPerformer(outputDirectory, sortedLineGraphFile);
-				twp.calculateTW("RM");
+				Console.outln("\n >>> Check the file '"+outputDirectory+twrmFile+"' for results.");
+				twp.calculateTW("RM",outputDirectory+twrmFile);
 			}
 			else if(ans==13)
 			{
 				TreeWidthPerformer twp = new TreeWidthPerformer(outputDirectory, sortedLineGraphFile);
-				twp.calculateTW("BB");
+				Console.outln("\n >>> Check the file '"+outputDirectory+twbbFile+"' for results.");
+				twp.calculateTW("BB",outputDirectory+twbbFile);
 			}
 			else
 				break;

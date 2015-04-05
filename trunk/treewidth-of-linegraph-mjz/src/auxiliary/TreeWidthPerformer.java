@@ -18,8 +18,9 @@ public class TreeWidthPerformer
 		this.mjzStdFile = mjzStdFile;
 	}
 	
-	public void calculateTW(String algorithm)
+	public void calculateTW(String algorithm, String OutputFilePath)
 	{
+		FileWritter fwS = new FileWritter(OutputFilePath);
 		//change addresses
 		Console.outln("The default address for input MJZ Std. data file is : "+this.inputDirectory+this.mjzStdFile);
 		Console.out("Do you want to change it? (Y as Yes/Other characters as No!) : ");
@@ -44,7 +45,8 @@ public class TreeWidthPerformer
 			{
 				int ub = g.getTreeWidthUpperBound();
 				int lb = g.getTreeWidthLowerBound();
-				Console.out(c+"-\t"+g.getSpecificName() + " , Lb= "+lb+ " , Ub= "+ub+" --> TW"+algorithm+"= " );
+				String line = (c+"-\t"+g.getSpecificName() + " , Lb= "+lb+ " , Ub= "+ub+" --> TW"+algorithm+"= " );
+				Console.out(line);
 				startTime = System.currentTimeMillis();
 				int tw = 0;
 				if(algorithm.compareTo("DP")==0)
@@ -58,12 +60,15 @@ public class TreeWidthPerformer
 					if(lb>0)
 						tw = g.getTreeWidthByBranchAndBound();
 					else
-						Console.out(" Unconnected Graph!");
+						tw=-1;
 				}
+				line +=(""+tw);
 				Console.out(""+tw);
 				stopTime = System.currentTimeMillis();
 				elapsedTime = stopTime - startTime;
-				Console.outln(" , exTime= "+elapsedTime);
+				line +=(" , exTime= "+elapsedTime  +" ;");
+				Console.outln(" , exTime= "+elapsedTime +" ;");
+				fwS.appendNextLine(line);				
 				c++;				
 			}
 			
@@ -71,6 +76,8 @@ public class TreeWidthPerformer
 			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
+		}finally{
+			fwS.close();
 		}
 	}
 	
