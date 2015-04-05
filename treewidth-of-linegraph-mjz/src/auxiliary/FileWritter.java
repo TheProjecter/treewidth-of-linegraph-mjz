@@ -52,6 +52,7 @@ public class FileWritter
 		try
 		{
 	        this.bufferWritter.write(data);
+	        this.bufferWritter.flush();
 	        return true;
 		} catch (IOException e) {
 			System.out.println("Problem in writing in output file.");
@@ -67,6 +68,7 @@ public class FileWritter
 		try
 		{
 	        this.bufferWritter.write(data+"\n");
+	        this.bufferWritter.flush();
 	        return true;
 		} catch (IOException e) {
 			System.out.println("Problem in writing in output file.");
